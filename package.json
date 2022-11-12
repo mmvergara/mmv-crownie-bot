@@ -1,0 +1,22 @@
+{
+  "name": "mmv-crownie-bot",
+  "version": "1.0.0",
+  "description": "discord bot made by mmvergara",
+  "main": "index.js",
+  "scripts": {
+    "build":"tsc",
+    "start": "tsc && node build/src/index.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon build/src/index.js"
+  },
+  "author": "mmvergara",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
