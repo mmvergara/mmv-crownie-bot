@@ -3,6 +3,19 @@ import { BOT_TOKEN } from "./config";
 import { resolve, join } from "path";
 import getJsFiles from "./utils/getJsFiles";
 
+
+import express from "express";
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log("Listening in port ", port);
+});
+
+app.get("/", (req, res, next) => {
+  res.send("HELLO Discord BOT!");
+});
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,

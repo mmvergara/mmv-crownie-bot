@@ -1,3 +1,3 @@
-import './bot'
-import './deploy-commands'
+import "./bot";
+import "./deploy-commands";
 
