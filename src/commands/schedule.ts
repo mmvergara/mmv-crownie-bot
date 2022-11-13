@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { CommandInteraction, EmbedBuilder, APIEmbed, JSONEncodable } from "discord.js";
+import { CommandInteraction, APIEmbed, JSONEncodable } from "discord.js";
 
 export const data = new SlashCommandBuilder().setName("schedule").setDescription("School Schedule");
 
