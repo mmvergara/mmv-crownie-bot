@@ -36,10 +36,10 @@ export function execute(interaction: CommandInteraction) {
       value: "WALANG PASOK",
     },
   ];
+  let dateToday = new Date().getDay();
+  if (dateToday == 0) dateToday = 7;
 
-  const dateToday = new Date().getDay();
   const todayScheduleInfo = subjectOnDayX[dateToday - 1];
-
   const embeds: (APIEmbed | JSONEncodable<APIEmbed>)[] = [
     {
       title: "Schedule of BSIT 2-A",
