@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsc && node ./build/src/index.js",
-    "start:ts": "ts-node ./src/index.ts",
+    "start:dev": "tsc && node ./build/src/index.js",
     "dev": "concurrently \"tsc -w\" \"nodemon build/src/index.js"
   },
   "author": "mmvergara",
@@ -14,8 +14,7 @@
   "dependencies": {
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "ts-node": "^10.9.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
