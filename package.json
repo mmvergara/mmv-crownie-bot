@@ -2,10 +2,10 @@
   "name": "mmv-crownie-bot",
   "version": "1.0.0",
   "description": "discord bot made by mmvergara",
-  "main": "build/src/index.js",
+  "main": "./build/src/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node build/src/index.js",
+    "start": "tsc && node ./build/src/index.js",
     "start:ts": "ts-node ./src/index.ts",
     "dev": "concurrently \"tsc -w\" \"nodemon build/src/index.js"
   },
