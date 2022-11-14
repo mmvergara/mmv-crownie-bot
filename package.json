@@ -5,7 +5,7 @@
   "main": "./build/src/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node ./build/src/index.js",
+    "start": "node ./build/src/index.js",
     "start:dev": "tsc && node ./build/src/index.js",
     "dev": "concurrently \"tsc -w\" \"nodemon build/src/index.js"
   },
