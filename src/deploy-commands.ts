@@ -16,7 +16,7 @@ for (const file of commandFiles) {
 
 const deployCommands = async () => {
   try {
-    console.log("Started refreshing application (/) commands.");
+    console.log("Started refreshing application (/) commands.=");
     await rest.put(Routes.applicationCommands(CLIENT_ID), {
       body: commands,
     });

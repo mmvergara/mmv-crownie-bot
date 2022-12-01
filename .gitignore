@@ -1,5 +1,5 @@
 node_modules/
-
+build/
 # dotenv environment variable files
 .env
 .env.development.local
