@@ -8,7 +8,6 @@ const commands: string[] = [];
 
 const commandDir = resolve(__dirname, "commands");
 const commandFiles = getJsFiles(commandDir);
-
 for (const file of commandFiles) {
   const command = require(join(commandDir, file));
   commands.push(command.data.toJSON());
@@ -16,7 +15,7 @@ for (const file of commandFiles) {
 
 const deployCommands = async () => {
   try {
-    console.log("Started refreshing application (/) commands.=");
+    console.log("Started refreshing application  /) commands.=");
     await rest.put(Routes.applicationCommands(CLIENT_ID), {
       body: commands,
     });
